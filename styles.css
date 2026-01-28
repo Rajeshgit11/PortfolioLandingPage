@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+  color: rgb(239, 235, 235);
+  padding: 12px 0;
+  list-style: none;
+  line-height: 1.9;
+}
+
+.logo {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  margin: 0px 22px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(243, 147, 147);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.hero {
+  padding: 47px 86px;
+  padding-bottom: 8px;
+  background-color: #b6d8ee;
+}
+
+.hero-text {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 1px;
+}
+
+.projects {
+  padding: 40px 20px;
+  background-color: #fbf9f9;
+}
+
+.project-showcase {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid #dfdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 350px;
+  width: 315px;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 10px;
+}
+
+footer {
+  background-color: #151414;
+  color: rgb(232, 223, 223);
+  padding: 16px;
+  font-size: 14px;
+}
+
+footer a {
+  color: rgb(246, 245, 245);
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .project {
+        width: auto;
+        height: auto;
+    }
+
+    .project img {
+        height: auto;
+        width: 100%;
+    }
+
+    .hero img {
+        height: auto;
+        width: 100%;
+    }
+
+}
